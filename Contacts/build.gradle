@@ -1,0 +1,40 @@
+
+group 'Contacts'
+version '1.0-SNAPSHOT'
+buildscript{
+    repositories{
+        mavenCentral();
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.4.RELEASE")
+    }
+}
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+apply plugin: 'war'
+sourceCompatibility = 1.8
+
+war{
+    baseName='contacts'
+    version= '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile(
+            "org.springframework.boot:spring-boot-starter-web",
+            "org.springframework.boot:spring-boot-starter-jdbc",
+            "org.thymeleaf:thymeleaf-spring4",
+            "com.h2database:h2"
+    )
+
+}
+
+task wrapper(type:Wrapper){
+    gradleVersion = '1.8'
+}
