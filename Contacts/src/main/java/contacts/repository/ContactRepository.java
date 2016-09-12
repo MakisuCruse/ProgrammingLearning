@@ -25,7 +25,8 @@ public class ContactRepository {
     }
 
     public List<Contact> findAll() {
-        return jdbc.query("select id,firstName,lastName,phoneNumber,emailAddress from contacts order by lastName", new RowMapper<Contact>() {
+        return jdbc.query("select * from contacts order by lastName",
+                            new RowMapper<Contact>() {
             @Override
             public Contact mapRow(ResultSet rs, int rowNum) throws SQLException {
                 Contact contact = new Contact();

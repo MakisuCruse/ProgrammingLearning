@@ -1,8 +1,7 @@
-
 group 'Contacts'
 version '1.0-SNAPSHOT'
-buildscript{
-    repositories{
+buildscript {
+    repositories {
         mavenCentral();
     }
 
@@ -13,11 +12,12 @@ buildscript{
 apply plugin: 'java'
 apply plugin: 'spring-boot'
 apply plugin: 'war'
+apply plugin: 'jetty'
 sourceCompatibility = 1.8
 
-war{
-    baseName='contacts'
-    version= '0.1.0'
+war {
+    baseName = 'contacts'
+    version = '0.1.0'
 }
 
 repositories {
@@ -29,12 +29,23 @@ dependencies {
     compile(
             "org.springframework.boot:spring-boot-starter-web",
             "org.springframework.boot:spring-boot-starter-jdbc",
+            "org.springframework.boot:spring-boot-starter-actuator",
             "org.thymeleaf:thymeleaf-spring4",
             "com.h2database:h2"
     )
 
 }
 
-task wrapper(type:Wrapper){
+jettyRun {
+    contextPath = '/'
+    httpPort = 8080
+}
+
+jettyRunWar {
+    contextPath = '/'
+    httpPort = 8080
+}
+
+task wrapper(type: Wrapper) {
     gradleVersion = '1.8'
 }
