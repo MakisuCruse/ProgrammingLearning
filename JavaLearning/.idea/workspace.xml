@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245a0b48-9afa-469e-8d33-8e262341e56a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/views/home.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/views/index.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/home.ftl" afterPath="$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/index.ftl" />
     </list>
     <ignored path="JavaLearning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,8 +88,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.ftl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/home.ftl">
+      <file leaf-file-name="index.ftl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/index.ftl">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.25735295">
               <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
@@ -906,12 +904,12 @@
       <workItem from="1474895131959" duration="310000" />
       <workItem from="1474904398178" duration="1614000" />
       <workItem from="1474936698653" duration="31000" />
-      <workItem from="1475134135185" duration="252000" />
+      <workItem from="1475134135185" duration="361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4053000" />
+    <option name="totallyTimeSpent" value="4162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="719" extended-state="6" />
@@ -1003,7 +1001,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/home.ftl">
+    <entry file="file://$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1045,7 +1043,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/home.ftl">
+    <entry file="file://$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1079,7 +1077,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/home.ftl">
+    <entry file="file://$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
@@ -1160,7 +1158,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/home.ftl">
+    <entry file="file://$PROJECT_DIR$/SpringMVCTest/src/main/webapp/WEB-INF/ftl/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25735295">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
