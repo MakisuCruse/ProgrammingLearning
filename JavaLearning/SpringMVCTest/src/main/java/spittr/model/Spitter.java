@@ -20,6 +20,12 @@ public class Spitter {
 
     }
 
+    public Spitter(String email, String username, String password) {
+        this.email = email;
+        this.username = username;
+        this.password = password;
+    }
+
     public String getEmail() {
         return email;
     }
