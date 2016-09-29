@@ -46,5 +46,6 @@
     <orderEntry type="library" exported="" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-context-support:4.3.2.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: javax.validation:validation-api:1.1.0.Final" level="project" />
   </component>
 </module>

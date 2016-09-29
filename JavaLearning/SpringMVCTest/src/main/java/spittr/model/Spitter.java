@@ -1,11 +1,19 @@
 package spittr.model;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 /**
  * Created by makisucruse on 16/9/29.
  */
 public class Spitter {
+    @NotNull
     private String email;
+    @NotNull
+    @Size(min = 5, max = 30)
     private String username;
+    @NotNull
+    @Size(min = 6, max = 20)
     private String password;
 
     public Spitter() {
