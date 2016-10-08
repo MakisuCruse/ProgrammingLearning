@@ -4,12 +4,22 @@
 *.jar
 *.war
 *.ear
-
+# IDEA #
 # idea
 .idea
 *.iml
 
+# Eclipse #
+*.settings
+*.classpath
+*.project
+
+# NetBeans # 
+nb-configuration.xml
+
+
 #gradle
 .gradle
 build/
+
 
