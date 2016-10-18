@@ -36,7 +36,7 @@ public class BookResource {
      * @return a {@link com.example.domain.Books} object.
      */
     @GET
-    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
     public Books getBooks() {
         final Books books = bookService.getBooks();
         BookResource.LOGGER.debug(books);
@@ -51,7 +51,7 @@ public class BookResource {
      */
     @Path("{bookId:[0-9]*}")
     @GET
-    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Book getBookByPath(@PathParam("bookId") final Long bookId) {
         final Book book = bookService.getBook(bookId);
         BookResource.LOGGER.debug(book);
@@ -66,7 +66,7 @@ public class BookResource {
      */
     @Path("/book")
     @GET
-    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
     public Book getBookByQuery(@QueryParam("id") final Long bookId) {
         final Book book = bookService.getBook(bookId);
         BookResource.LOGGER.debug(book);
@@ -80,8 +80,8 @@ public class BookResource {
      * @return a {@link com.example.domain.Book} object.
      */
     @POST
-    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-    @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.TEXT_XML })
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.TEXT_XML})
     public Book saveBook(final Book book) {
         return bookService.saveBook(book);
     }
@@ -90,13 +90,13 @@ public class BookResource {
      * <p>updateBook.</p>
      *
      * @param bookId a {@link java.lang.Integer} object.
-     * @param book a {@link com.example.domain.Book} object.
+     * @param book   a {@link com.example.domain.Book} object.
      * @return a {@link com.example.domain.Book} object.
      */
     @Path("{bookId:[0-9]*}")
     @PUT
-    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-    @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.TEXT_XML })
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.TEXT_XML})
     public Book updateBook(@PathParam("bookId") final Long bookId, final Book book) {
         if (book == null) {
             return null;
