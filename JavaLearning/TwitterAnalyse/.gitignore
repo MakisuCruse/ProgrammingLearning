@@ -1,0 +1,8 @@
+*.idea
+META-INF/
+*.iml
+lib/
+pom.xml
+target
+/Users/makisucruse/Downloads/TwitterAnalyseCopy/src/main/resources/
+src/main/webapp/
